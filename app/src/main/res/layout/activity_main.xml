@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="pe.PruebaCalculadora.Main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PruebaCalculadora"
+        android:id="@+id/tvtitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#090909" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nota 1:"
+        android:id="@+id/tvnota1"
+ />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nota 2:"
+        android:id="@+id/tvnota2"
+        android:layout_marginTop="40dp" />
+
+
+/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etnota1"
+        android:layout_below="@+id/tvtitle"
+        android:layout_alignStart="@+id/tvtitle"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etnota2"
+        android:layout_below="@+id/etnota1"
+        android:layout_alignStart="@+id/etnota1"
+        android:layout_alignEnd="@+id/etnota1" />
+
+    <
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUMA"
+        android:id="@+id/btnsuma"
+        android:onClick="suma"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESTA"
+        android:id="@+id/btnresta"
+        android:onClick="resta"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIVISION"
+        android:id="@+id/btndivision"
+        android:onClick="division"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MULTIPLICACION"
+        android:id="@+id/btnmultiplicacion"
+        android:onClick="multiplicacion"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Resultado"
+        android:id="@+id/textView"
+        android:layout_below="@+id/btnmultiplicacion"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp" />
+</LinearLayout>
